@@ -68,18 +68,20 @@
 
     <section class="job-title-section flex container justify-between mx-auto pt-8">
         <h3 class="font-bold text-[1.20rem]">Available Jobs</h3>
-        <h6 class="text-gray-600"><span id="mini-count" class="hidden"> </span> <span id="2total">0</span> jobs</h6>
+        <h6 class="text-gray-600"><span id="mini-count" class="hidden"> </span> <span id="mini-count2" class="hidden">
+            </span> <span id="2total">0</span> jobs</h6>
     </section>
 
     <section class="job-detailes-section container mx-auto mt-5">
         <!-- top 3 btn -->
         <div class="btn-section flex gap-4">
-            <button onclick="showOnly('job-detailes-card');miniHide();colorAdd('all')" id="all"
+            <button onclick="showOnly('job-detailes-card');miniHide();miniHide2();colorAdd('all')" id="all"
                 class="btn top-btn3  px-5 py-1.5 rounded-md">All</button>
-            <button onclick="showOnly('interview-section');miniCount();colorAdd('interview-container')"
+            <button onclick="showOnly('interview-section');miniCount();miniHide2();colorAdd('interview-container')"
                 id="interview-container" class="btn bg-white px-5 py-1.5 rounded-md">Interview</button>
-            <button id="rejected-color" onclick="showOnly('rejected-section');miniCount();colorAdd('rejected-color')"
-                class="btn bg-white px-5 py-1.5 rounded-md">Rejected</button>
+            <button id="rejected-color"
+                onclick="showOnly('rejected-section');miniCount2();miniHide();colorAdd('rejected-color')"
+                class="btn bg-white px-5 py-1.5 rounded-md ">Rejected</button>
         </div>
 
 
@@ -95,7 +97,7 @@
                     </div>
                     <p class="text-gray-400">React Native Developer</p>
                     <p class="mt-5 mb-5 text-gray-400">Remote • Full-time • $130,000 - $175,000</p>
-                    <span id="first-status" class="bg-gray-300 px-5 py-2 rounded-md">Not Applied</span>
+                    <span id="first-status" class=".status-control bg-gray-300 px-5 py-2 rounded-md">Not Applied</span>
                     <p class="mb-5 mt-5 text-gray-500">Build cross-platform mobile applications using React Native. Work
                         on
                         products used
@@ -118,7 +120,7 @@
                     </div>
                     <p class="text-gray-400">Web Designer & Developer</p>
                     <p class="mt-5 mb-5 text-gray-400">Los Angeles, CA • Part-time • $80,000 - $120,000</p>
-                    <span id="second-status" class="bg-gray-300 px-5 py-2 rounded-md">Not Applied</span>
+                    <span id="second-status" class=" bg-gray-300 px-5 py-2 rounded-md">Not Applied</span>
                     <p class="mb-5 mt-5 text-gray-500">Create stunning web experiences for high-profile clients. Must
                         have
                         portfolio and experience with modern web design trends.</p>
@@ -261,7 +263,8 @@
     <section id="rejected-section" class="container mx-auto hidden  pt-4 space-y-5">
     </section>
 
-    <script src="script.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/mahcin.js"></script>
 </body>
 
 </html>
