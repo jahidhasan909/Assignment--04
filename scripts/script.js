@@ -72,7 +72,6 @@ document.getElementById('first-rejected-btn').addEventListener('click', function
     const interviewReject = document.getElementById('rejected-section');
     interviewReject.appendChild(newDivs);
     updateCount();
-
 })
 
 
@@ -580,5 +579,49 @@ document.getElementById('eight-rejected-btn').addEventListener('click', function
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+// interview and rejected empty msg handler..
+
+document.getElementById('interview-container').addEventListener('click', function () {
+    const container = document.getElementById('interview-section');
+
+
+    const jobAllCard = container.querySelectorAll('.job-card');
+    const noMsgContainer = container.querySelector('.no-msg');
+
+    if (jobAllCard.length == 0) {
+        noMsgContainer.style.display = 'block';
+
+    } else {
+        noMsgContainer.style.display = 'none';
+    }
+})
+
+document.getElementById('rejected-color').addEventListener('click', function () {
+    const container = document.getElementById('rejected-section');
+
+
+    const jobAllCard = container.querySelectorAll('.job-card');
+    const noMsgContainer = container.querySelector('.no-msg');
+
+    if (jobAllCard.length == 0) {
+        noMsgContainer.style.display = 'block';
+
+    } else {
+        noMsgContainer.style.display = 'none';
+    }
+})
 
 

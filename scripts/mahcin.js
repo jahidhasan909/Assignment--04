@@ -5,10 +5,18 @@ function updateCount() {
     const rejectedSection = document.getElementById('rejected-section');
 
 
+    const interviewJobCounts = interviewSection.querySelectorAll('.job-card');
+    const interviewJobCount = interviewJobCounts.length;
+
     const interviewCount = document.getElementById('interview-count');
-    interviewCount.innerText = interviewSection.children.length;
+    interviewCount.innerText = interviewJobCount;
+
+    const rejectedCounts = rejectedSection.querySelectorAll('.job-card');
+    const rejectedJobCount = rejectedCounts.length;
+
     const rejectedCount = document.getElementById('rejected-count');
-    rejectedCount.innerText = rejectedSection.children.length;
+    rejectedCount.innerText = rejectedJobCount;
+
 
 
     updateMini();
@@ -52,14 +60,21 @@ function updateMini() {
     const miniCount = document.getElementById('mini-count');
     const interviewSection = document.getElementById('interview-section');
 
-    miniCount.innerText = interviewSection.children.length;
+    const interviewJobCounts = interviewSection.querySelectorAll('.job-card');
+    const interviewJobCount = interviewJobCounts.length;
+
+
+
+
+    miniCount.innerText = `${interviewJobCount} of `;
 }
 function updateMiniRe() {
     const miniCount = document.getElementById('mini-count2');
-    const interviewReject = document.getElementById('rejected-section');
+    const rejectJobCount = document.getElementById('rejected-section');
 
-
-    miniCount.innerText = interviewReject.children.length;
+    const rejectedJobCounts = rejectJobCount.querySelectorAll('.job-card');
+    const rejectedJobCount = rejectedJobCounts.length;
+    miniCount.innerText = `${rejectedJobCount} of`;
 }
 
 function colorAdd(id) {
