@@ -2,7 +2,7 @@
 
 
 
-//  all tap deleted functionality
+//  all tap deleted functionality and with all job section empty job functionality
 
 document.getElementById('deleted-btn').addEventListener('click', function () {
     const card = document.getElementById('card1');
@@ -16,6 +16,18 @@ document.getElementById('deleted-btn').addEventListener('click', function () {
 
     const secondTotal = document.getElementById('2total');
     secondTotal.innerText = jobDetailsCard.children.length;
+
+    // empty job status
+    if (jobDetailsCard.children.length === 0) {
+        const div = document.createElement('div');
+        div.innerHTML = `   
+            <img class="block mx-auto" src="assets/jobs.png" alt="">
+            <h1 class="text-center font-bold text-[1.20rem]">No job available</h1>
+            <p class="text-center text-gray-500">Check back soon for new job opportunities</p>
+     `;
+        div.classList.add('all-tapEmpty');
+        jobDetailsCard.appendChild(div);
+    }
 
 
 })
@@ -33,6 +45,18 @@ document.getElementById('deleted-btn2').addEventListener('click', function () {
     const secondTotal = document.getElementById('2total');
     secondTotal.innerText = jobDetailsCard.children.length;
 
+    // empty job status
+    if (jobDetailsCard.children.length === 0) {
+        const div = document.createElement('div');
+        div.innerHTML = `    
+            <img class="block mx-auto" src="assets/jobs.png" alt="">
+            <h1 class="text-center font-bold text-[1.20rem]">No job available</h1>
+            <p class="text-center text-gray-500">Check back soon for new job opportunities</p>
+        `;
+        div.classList.add('all-tapEmpty');
+        jobDetailsCard.appendChild(div);
+    }
+
 })
 
 document.getElementById('deleted-btn3').addEventListener('click', function () {
@@ -49,6 +73,18 @@ document.getElementById('deleted-btn3').addEventListener('click', function () {
     const secondTotal = document.getElementById('2total');
     secondTotal.innerText = jobDetailsCard.children.length;
 
+    // empty job status
+    if (jobDetailsCard.children.length === 0) {
+        const div = document.createElement('div');
+        div.innerHTML = `  
+            <img class="block mx-auto" src="assets/jobs.png" alt="">
+            <h1 class="text-center font-bold text-[1.20rem]">No job available</h1>
+            <p class="text-center text-gray-500">Check back soon for new job opportunities</p>
+        `;
+        div.classList.add('all-tapEmpty');
+        jobDetailsCard.appendChild(div);
+    }
+
 })
 document.getElementById('deleted-btn4').addEventListener('click', function () {
     const card = document.getElementById('card4');
@@ -63,6 +99,18 @@ document.getElementById('deleted-btn4').addEventListener('click', function () {
 
     const secondTotal = document.getElementById('2total');
     secondTotal.innerText = jobDetailsCard.children.length;
+
+    // empty job status
+    if (jobDetailsCard.children.length === 0) {
+        const div = document.createElement('div');
+        div.innerHTML = `
+            <img class="block mx-auto" src="assets/jobs.png" alt="">
+            <h1 class="text-center font-bold text-[1.20rem]">No job available</h1>
+            <p class="text-center text-gray-500">Check back soon for new job opportunities</p>
+        `;
+        div.classList.add('all-tapEmpty');
+        jobDetailsCard.appendChild(div);
+    }
 
 })
 document.getElementById('deleted-btn5').addEventListener('click', function () {
@@ -79,6 +127,18 @@ document.getElementById('deleted-btn5').addEventListener('click', function () {
     const secondTotal = document.getElementById('2total');
     secondTotal.innerText = jobDetailsCard.children.length;
 
+    // empty job status
+    if (jobDetailsCard.children.length === 0) {
+        const div = document.createElement('div');
+        div.innerHTML = `
+            <img class="block mx-auto" src="assets/jobs.png" alt="">
+            <h1 class="text-center font-bold text-[1.20rem]">No job available</h1>
+            <p class="text-center text-gray-500">Check back soon for new job opportunities</p>
+        `;
+        div.classList.add('all-tapEmpty');
+        jobDetailsCard.appendChild(div);
+    }
+
 })
 document.getElementById('deleted-btn6').addEventListener('click', function () {
     const card = document.getElementById('card6');
@@ -93,6 +153,18 @@ document.getElementById('deleted-btn6').addEventListener('click', function () {
 
     const secondTotal = document.getElementById('2total');
     secondTotal.innerText = jobDetailsCard.children.length;
+
+    // empty job status
+    if (jobDetailsCard.children.length === 0) {
+        const div = document.createElement('div');
+        div.innerHTML = `
+            <img class="block mx-auto" src="assets/jobs.png" alt="">
+            <h1 class="text-center font-bold text-[1.20rem]">No job available</h1>
+            <p class="text-center text-gray-500">Check back soon for new job opportunities</p>
+       `;
+        div.classList.add('all-tapEmpty');
+        jobDetailsCard.appendChild(div);
+    }
 
 })
 document.getElementById('deleted-btn7').addEventListener('click', function () {
@@ -109,6 +181,18 @@ document.getElementById('deleted-btn7').addEventListener('click', function () {
     const secondTotal = document.getElementById('2total');
     secondTotal.innerText = jobDetailsCard.children.length;
 
+    // empty job status
+    if (jobDetailsCard.children.length === 0) {
+        const div = document.createElement('div');
+        div.innerHTML = `
+            <img class="block mx-auto" src="assets/jobs.png" alt="">
+            <h1 class="text-center font-bold text-[1.20rem]">No job available</h1>
+            <p class="text-center text-gray-500">Check back soon for new job opportunities</p>
+      `;
+        div.classList.add('all-tapEmpty');
+        jobDetailsCard.appendChild(div);
+    }
+
 })
 document.getElementById('deleted-btn8').addEventListener('click', function () {
     const card = document.getElementById('card8');
@@ -124,4 +208,19 @@ document.getElementById('deleted-btn8').addEventListener('click', function () {
     const secondTotal = document.getElementById('2total');
     secondTotal.innerText = jobDetailsCard.children.length;
 
+
+
+    // empty job status
+    if (jobDetailsCard.children.length === 0) {
+        const div = document.createElement('div');
+        div.innerHTML = `
+            <img class="block mx-auto" src="assets/jobs.png" alt="">
+            <h1 class="text-center font-bold text-[1.20rem]">No job available</h1>
+            <p class="text-center text-gray-500">Check back soon for new job opportunities</p>
+        `;
+
+        div.classList.add('all-tapEmpty');
+        jobDetailsCard.appendChild(div);
+    }
 })
+

@@ -40,12 +40,18 @@
             background-color: rgb(52, 130, 240);
             color: white;
         }
+
+        .all-tapEmpty {
+            background-color: white;
+            border-radius: 10px;
+            padding: 100px 20px;
+        }
     </style>
 </head>
 
 <body class="bg-gray-200">
 
-    <!-- count section -->
+    <!--top count section -->
     <section class="count-section container mx-auto pt-10">
         <h1 class="font-bold text-2xl mb-5">Job Application Tracker</h1>
         <div class="grid grid-cols-3 gap-5">
@@ -65,13 +71,14 @@
     </section>
 
     <hr class="container mx-auto mt-8 text-gray-300">
-
+    <!-- middle title and right side mini count -->
     <section class="job-title-section flex container justify-between mx-auto pt-8">
         <h3 class="font-bold text-[1.20rem]">Available Jobs</h3>
         <h6 class="text-gray-600"><span id="mini-count" class="hidden"> </span> <span id="mini-count2" class="hidden">
             </span> <span id="2total">0</span> jobs</h6>
     </section>
 
+    <!-- 3 button and all job cards -->
     <section class="job-detailes-section container mx-auto mt-5">
         <!-- top 3 btn -->
         <div class="btn-tap-section flex gap-4">
@@ -275,9 +282,9 @@
 
 
 
-  
+
     <!-- interview and rejected section -->
-    <section id="interview-section" class="container mx-auto hidden pt-4 space-y-5">
+    <section id="interview-section" class="container mx-auto hidden pt-4 space-y-5 mb-10">
         <div class="no-msg hidden space-y-3 mt-4 bg-white py-20 rounded-md">
             <img class="block mx-auto" src="assets/jobs.png" alt="">
             <h1 class="text-center font-bold text-[1.20rem]">No job available</h1>
@@ -286,7 +293,7 @@
     </section>
 
 
-    <section id="rejected-section" class="container mx-auto hidden  pt-4 space-y-5">
+    <section id="rejected-section" class="container mx-auto hidden  pt-4 space-y-5 mb-10">
         <div class="no-msg hidden space-y-3 mt-4 bg-white py-20 rounded-md">
             <img class="block mx-auto" src="assets/jobs.png" alt="">
             <h1 class="text-center font-bold text-[1.20rem]">No job available</h1>
@@ -294,6 +301,7 @@
         </div>
     </section>
 
+    
     <script src="scripts/script.js"></script>
     <script src="scripts/mahcin.js"></script>
     <script src="scripts/alljob-delete.js"></script>

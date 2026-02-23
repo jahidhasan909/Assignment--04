@@ -2,13 +2,11 @@
 const jobDetailsCard = document.getElementById('job-detailes-card');
 
 
-
 const totalJob = document.getElementById('total');
 totalJob.innerText = jobDetailsCard.children.length;
 
 const secondTotal = document.getElementById('2total');
 secondTotal.innerText = jobDetailsCard.children.length;
-
 
 
 
@@ -32,11 +30,13 @@ document.getElementById('first-interview-btn').addEventListener('click', functio
 
     newDiv.querySelector('#first-rejected-btn').addEventListener('click', function () {
         transferCard(newDiv, 'rejected-section');
-
+        noJobCheckInterview();
+        noJobCheckRejected();
     })
     newDiv.querySelector('#first-interview-btn').addEventListener('click', function () {
         transferCard(newDiv, 'interview-section');
-
+        noJobCheckInterview();
+        noJobCheckRejected();
     })
     const interviewSection = document.getElementById('interview-section');
     interviewSection.appendChild(newDiv);
@@ -62,10 +62,14 @@ document.getElementById('first-rejected-btn').addEventListener('click', function
 
     newDivs.querySelector('#first-interview-btn').addEventListener('click', function () {
         transferCard(newDivs, 'interview-section');
+        noJobCheckRejected();
+        noJobCheckInterview();
 
     })
     newDivs.querySelector('#first-rejected-btn').addEventListener('click', function () {
         transferCard(newDivs, 'rejected-section');
+        noJobCheckRejected();
+        noJobCheckInterview();
 
     })
 
@@ -73,8 +77,6 @@ document.getElementById('first-rejected-btn').addEventListener('click', function
     interviewReject.appendChild(newDivs);
     updateCount();
 })
-
-
 
 
 // job card 2
@@ -99,10 +101,14 @@ document.getElementById('second-interview-btn').addEventListener('click', functi
 
     newDiv.querySelector('#second-interview-btn').addEventListener('click', function () {
         transferCard2(newDiv, 'interview-section');
+        noJobCheckInterview();
+        noJobCheckRejected();
 
     })
     newDiv.querySelector('#second-rejected-btn').addEventListener('click', function () {
         transferCard2(newDiv, 'rejected-section');
+        noJobCheckInterview();
+        noJobCheckRejected();
 
     })
     const interviewSection = document.getElementById('interview-section');
@@ -131,10 +137,14 @@ document.getElementById('second-rejected-btn').addEventListener('click', functio
 
     newDivs.querySelector('#second-interview-btn').addEventListener('click', function () {
         transferCard2(newDivs, 'interview-section');
+        noJobCheckRejected();
+        noJobCheckInterview();
 
     })
     newDivs.querySelector('#second-rejected-btn').addEventListener('click', function () {
         transferCard2(newDivs, 'rejected-section');
+        noJobCheckRejected();
+        noJobCheckInterview();
 
     })
 
@@ -144,7 +154,6 @@ document.getElementById('second-rejected-btn').addEventListener('click', functio
 
 
 })
-
 
 
 // job card 3
@@ -168,10 +177,14 @@ document.getElementById('third-interview-btn').addEventListener('click', functio
 
     newDiv.querySelector('#third-interview-btn').addEventListener('click', function () {
         transferCard3(newDiv, 'interview-section');
+        noJobCheckInterview();
+        noJobCheckRejected();
 
     })
     newDiv.querySelector('#third-rejected-btn').addEventListener('click', function () {
         transferCard3(newDiv, 'rejected-section');
+        noJobCheckInterview();
+        noJobCheckRejected();
 
     })
     const interviewSection = document.getElementById('interview-section');
@@ -202,10 +215,14 @@ document.getElementById('third-rejected-btn').addEventListener('click', function
 
     newDiv.querySelector('#third-interview-btn').addEventListener('click', function () {
         transferCard3(newDiv, 'interview-section');
+        noJobCheckRejected();
+        noJobCheckInterview();
 
     })
     newDiv.querySelector('#third-rejected-btn').addEventListener('click', function () {
         transferCard3(newDiv, 'rejected-section');
+        noJobCheckRejected();
+        noJobCheckInterview();
 
     })
     const interviewSection = document.getElementById('rejected-section');
@@ -216,10 +233,6 @@ document.getElementById('third-rejected-btn').addEventListener('click', function
 
 
 })
-
-
-
-
 
 
 // job card 4
@@ -246,10 +259,14 @@ document.getElementById('four-interview-btn').addEventListener('click', function
 
     newDiv.querySelector('#four-interview-btn').addEventListener('click', function () {
         transferCard4(newDiv, 'interview-section');
+        noJobCheckInterview();
+        noJobCheckRejected();
 
     })
     newDiv.querySelector('#four-rejected-btn').addEventListener('click', function () {
         transferCard4(newDiv, 'rejected-section');
+        noJobCheckInterview();
+        noJobCheckRejected();
 
     })
     const interviewSection = document.getElementById('interview-section');
@@ -280,10 +297,14 @@ document.getElementById('four-rejected-btn').addEventListener('click', function 
 
     newDiv.querySelector('#four-interview-btn').addEventListener('click', function () {
         transferCard4(newDiv, 'interview-section');
+        noJobCheckRejected();
+        noJobCheckInterview();
 
     })
     newDiv.querySelector('#four-rejected-btn').addEventListener('click', function () {
         transferCard4(newDiv, 'rejected-section');
+        noJobCheckRejected();
+        noJobCheckInterview();
 
     })
     const interviewSection = document.getElementById('rejected-section');
@@ -291,10 +312,6 @@ document.getElementById('four-rejected-btn').addEventListener('click', function 
     updateCount();
 
 })
-
-
-
-
 
 
 // job card 5
@@ -320,10 +337,14 @@ document.getElementById('five-interview-btn').addEventListener('click', function
 
     newDiv.querySelector('#five-interview-btn').addEventListener('click', function () {
         transferCard5(newDiv, 'interview-section');
+        noJobCheckInterview();
+        noJobCheckRejected();
 
     })
     newDiv.querySelector('#five-rejected-btn').addEventListener('click', function () {
         transferCard5(newDiv, 'rejected-section');
+        noJobCheckInterview();
+        noJobCheckRejected();
 
     })
     const interviewSection = document.getElementById('interview-section');
@@ -354,10 +375,12 @@ document.getElementById('five-rejected-btn').addEventListener('click', function 
 
     newDiv.querySelector('#five-interview-btn').addEventListener('click', function () {
         transferCard5(newDiv, 'interview-section');
+        noJobCheckRejected();
 
     })
     newDiv.querySelector('#five-rejected-btn').addEventListener('click', function () {
         transferCard5(newDiv, 'rejected-section');
+        noJobCheckRejected();
 
     })
     const interviewSection = document.getElementById('rejected-section');
@@ -366,11 +389,6 @@ document.getElementById('five-rejected-btn').addEventListener('click', function 
 
 
 })
-
-
-
-
-
 
 
 // job card 6
@@ -395,10 +413,15 @@ document.getElementById('six-interview-btn').addEventListener('click', function 
 
     newDiv.querySelector('#six-interview-btn').addEventListener('click', function () {
         transferCard6(newDiv, 'interview-section');
+        noJobCheckInterview();
+        noJobCheckRejected();
+        
 
     })
     newDiv.querySelector('#six-rejected-btn').addEventListener('click', function () {
         transferCard6(newDiv, 'rejected-section');
+        noJobCheckInterview();
+        noJobCheckRejected();
 
     })
     const interviewSection = document.getElementById('interview-section');
@@ -428,10 +451,14 @@ document.getElementById('six-rejected-btn').addEventListener('click', function (
 
     newDiv.querySelector('#six-interview-btn').addEventListener('click', function () {
         transferCard6(newDiv, 'interview-section');
+        noJobCheckRejected();
+         noJobCheckInterview();
 
     })
     newDiv.querySelector('#six-rejected-btn').addEventListener('click', function () {
         transferCard6(newDiv, 'rejected-section');
+        noJobCheckRejected();
+         noJobCheckInterview();
 
     })
     const interviewSection = document.getElementById('rejected-section');
@@ -439,9 +466,6 @@ document.getElementById('six-rejected-btn').addEventListener('click', function (
     updateCount();
 
 })
-
-
-
 
 
 // job card 7
@@ -466,10 +490,14 @@ document.getElementById('seven-interview-btn').addEventListener('click', functio
 
     newDiv.querySelector('#seven-interview-btn').addEventListener('click', function () {
         transferCard7(newDiv, 'interview-section');
+        noJobCheckInterview();
+        noJobCheckRejected();
 
     })
     newDiv.querySelector('#seven-rejected-btn').addEventListener('click', function () {
         transferCard7(newDiv, 'rejected-section');
+        noJobCheckInterview();
+        noJobCheckRejected();
 
     })
     const interviewSection = document.getElementById('interview-section');
@@ -498,10 +526,14 @@ document.getElementById('seven-rejected-btn').addEventListener('click', function
 
     newDiv.querySelector('#seven-interview-btn').addEventListener('click', function () {
         transferCard7(newDiv, 'interview-section');
+        noJobCheckRejected();
+        noJobCheckInterview();
 
     })
     newDiv.querySelector('#seven-rejected-btn').addEventListener('click', function () {
         transferCard7(newDiv, 'rejected-section');
+        noJobCheckRejected();
+        noJobCheckInterview();
 
     })
     const interviewSection = document.getElementById('rejected-section');
@@ -531,10 +563,13 @@ document.getElementById('eight-interview-btn').addEventListener('click', functio
 
     newDiv.querySelector('#eight-interview-btn').addEventListener('click', function () {
         transferCard8(newDiv, 'interview-section');
+        noJobCheckInterview();
+        
 
     })
     newDiv.querySelector('#eight-rejected-btn').addEventListener('click', function () {
         transferCard8(newDiv, 'rejected-section');
+        noJobCheckInterview();
 
     })
     const interviewSection = document.getElementById('interview-section');
@@ -563,10 +598,14 @@ document.getElementById('eight-rejected-btn').addEventListener('click', function
 
     newDiv.querySelector('#eight-interview-btn').addEventListener('click', function () {
         transferCard8(newDiv, 'interview-section');
+        noJobCheckRejected();
+        noJobCheckInterview();
 
     })
     newDiv.querySelector('#eight-rejected-btn').addEventListener('click', function () {
         transferCard8(newDiv, 'rejected-section');
+        noJobCheckRejected();
+        noJobCheckInterview();
 
     })
     const interviewSection = document.getElementById('rejected-section');
@@ -580,19 +619,38 @@ document.getElementById('eight-rejected-btn').addEventListener('click', function
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 // interview and rejected empty msg handler..
+
+function noJobCheckInterview() {
+    const container = document.getElementById('interview-section');
+
+
+    const jobAllCard = container.querySelectorAll('.job-card');
+    const noMsgContainer = container.querySelector('.no-msg');
+
+    if (jobAllCard.length == 0) {
+        noMsgContainer.style.display = 'block';
+
+    } else {
+        noMsgContainer.style.display = 'none';
+    }
+}
+
+function noJobCheckRejected() {
+    const container = document.getElementById('rejected-section');
+
+
+    const jobAllCard = container.querySelectorAll('.job-card');
+    const noMsgContainer = container.querySelector('.no-msg');
+
+    if (jobAllCard.length == 0) {
+        noMsgContainer.style.display = 'block';
+
+    } else {
+        noMsgContainer.style.display = 'none';
+    }
+}
+
 
 document.getElementById('interview-container').addEventListener('click', function () {
     const container = document.getElementById('interview-section');

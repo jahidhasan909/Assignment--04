@@ -1,5 +1,34 @@
 
 
+
+
+
+function showOnly(id) {
+    const allCard = document.getElementById('job-detailes-card');
+    const interviewSection = document.getElementById('interview-section');
+    const rejectedSection = document.getElementById('rejected-section');
+
+    rejectedSection.classList.add('hidden');
+    interviewSection.classList.add('hidden');
+    allCard.classList.add('hidden');
+
+    const select = document.getElementById(id);
+    select.classList.remove('hidden');
+
+}
+
+function colorAdd(id) {
+    const allBtn = document.querySelectorAll('.btn');
+    for (let colors of allBtn) {
+        colors.classList.remove('top-btn3');
+        colors.classList.add('bg-white');
+    }
+    let selectt = document.getElementById(id);
+    selectt.classList.add('top-btn3');
+}
+
+
+// all count
 function updateCount() {
     const interviewSection = document.getElementById('interview-section');
     const rejectedSection = document.getElementById('rejected-section');
@@ -24,21 +53,6 @@ function updateCount() {
 
 
 }
-
-function showOnly(id) {
-    const allCard = document.getElementById('job-detailes-card');
-    const interviewSection = document.getElementById('interview-section');
-    const rejectedSection = document.getElementById('rejected-section');
-
-    rejectedSection.classList.add('hidden');
-    interviewSection.classList.add('hidden');
-    allCard.classList.add('hidden');
-
-    const select = document.getElementById(id);
-    select.classList.remove('hidden');
-
-}
-
 function miniCount() {
     const miniCount = document.getElementById('mini-count');
     miniCount.classList.remove('hidden');
@@ -77,21 +91,13 @@ function updateMiniRe() {
     miniCount.innerText = `${rejectedJobCount} of`;
 }
 
-function colorAdd(id) {
-    const allBtn = document.querySelectorAll('.btn');
-    for (let colors of allBtn) {
-        colors.classList.remove('top-btn3');
-        colors.classList.add('bg-white');
-    }
-    let selectt = document.getElementById(id);
-    selectt.classList.add('top-btn3');
-}
 
 
+// ---------------------------------------------------------------------------
+// all jobCard CardTransfer ,statusButton Control,button disable enable control..
 
 
-
-
+// job card 1 handler
 
 function buttonControl(card, section) {
     const interviewButton = card.querySelector('#first-interview-btn');
@@ -161,7 +167,7 @@ function StatusControl(card, jobStatus) {
 
 
 
-// job card 2 haldaler
+// job card 2 handler
 function buttonControl2(card, section) {
     const interviewButton = card.querySelector('#second-interview-btn');
     const rejectedButton = card.querySelector('#second-rejected-btn');
@@ -232,7 +238,7 @@ function StatusControl2(card, jobStatus) {
 
 
 
-// job card 3 haldaler
+// job card 3 handler
 function buttonControl3(card, section) {
     const interviewButton = card.querySelector('#third-interview-btn');
     const rejectedButton = card.querySelector('#third-rejected-btn');
@@ -301,7 +307,7 @@ function StatusControl3(card, jobStatus) {
 
 
 
-// job card 4 haldaler
+// job card 4 handler
 function buttonControl4(card, section) {
     const interviewButton = card.querySelector('#four-interview-btn');
     const rejectedButton = card.querySelector('#four-rejected-btn');
@@ -372,7 +378,7 @@ function StatusControl4(card, jobStatus) {
 
 
 
-// job card 5 haldaler
+// job card 5 handler
 function buttonControl5(card, section) {
     const interviewButton = card.querySelector('#five-interview-btn');
     const rejectedButton = card.querySelector('#five-rejected-btn');
@@ -443,7 +449,7 @@ function StatusControl5(card, jobStatus) {
 
 
 
-// job card 6 haldaler
+// job card 6 handler
 function buttonControl6(card, section) {
     const interviewButton = card.querySelector('#six-interview-btn');
     const rejectedButton = card.querySelector('#six-rejected-btn');
@@ -512,7 +518,7 @@ function StatusControl6(card, jobStatus) {
 
 
 
-// job card 7 handelar
+// job card 7 handler
 function buttonControl7(card, section) {
     const interviewButton = card.querySelector('#seven-interview-btn');
     const rejectedButton = card.querySelector('#seven-rejected-btn');
@@ -582,7 +588,7 @@ function StatusControl7(card, jobStatus) {
 
 
 
-// job card 8 handelar
+// job card 8 handler
 function buttonControl8(card, section) {
     const interviewButton = card.querySelector('#eight-interview-btn');
     const rejectedButton = card.querySelector('#eight-rejected-btn');
