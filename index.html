@@ -53,8 +53,8 @@
 
     <!--top count section -->
     <section class="count-section container mx-auto pt-10">
-        <h1 class="font-bold text-2xl mb-5">Job Application Tracker</h1>
-        <div class="grid grid-cols-3 gap-5">
+        <h1 class="font-bold text-[1rem] lg:text-2xl mb-5">Job Application Tracker</h1>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
             <div class="bg-white p-4 rounded-md">
                 <h6>Total</h6>
                 <h3 id="total" class="font-bold text-[1.20rem]">0</h3>
@@ -81,7 +81,7 @@
     <!-- 3 button and all job cards -->
     <section class="job-detailes-section container mx-auto mt-5">
         <!-- top 3 btn -->
-        <div class="btn-tap-section flex gap-4">
+        <div class="btn-tap-section lg:flex lg:flex-cols-3 gap-4">
             <button onclick="showOnly('job-detailes-card');miniHide();miniHide2();colorAdd('all')" id="all"
                 class="cursor-grab hover:bg-blue-100 btn top-btn3  px-5 py-1.5 rounded-md">All</button>
             <button onclick="showOnly('interview-section');miniCount();miniHide2();colorAdd('interview-container')"
@@ -301,7 +301,7 @@
         </div>
     </section>
 
-    
+
     <script src="scripts/script.js"></script>
     <script src="scripts/mahcin.js"></script>
     <script src="scripts/alljob-delete.js"></script>
